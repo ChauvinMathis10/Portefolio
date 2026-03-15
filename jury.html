@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Jury - Mathis Chauvin</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="icon" href="asset/image/m.png" type="image/x-icon">
+    <style>
+        .preuve-section { margin-bottom: 40px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .preuve-section h3 { color: #333; border-bottom: 2px solid #007BFF; padding-bottom: 10px; margin-bottom: 20px; }
+        
+        /* Grille pour aligner les boutons de PDF */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        /* Style pour les boutons de téléchargement/visualisation des documents */
+        .btn-doc {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 15px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-doc:hover {
+            background-color: #007BFF;
+            color: #fff;
+            border-color: #007BFF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+        }
+        .btn-doc i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Sections spécifiques conservées pour les images */
+        .code-block { background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; margin-bottom: 15px; }
+        .jury-img { max-width: 100%; height: auto; border: 1px solid #ddd; margin: 10px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <header id="header">    
+        <div class="container">
+            <a href="index.html"><img src="asset/image/mc.png" alt="Logo" class="logo"></a>       
+            <nav class="underline">      
+                <ul>
+                    <li><a href="projets.html">⬅ Retour aux projets</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Preuves de Compétences - Espace Jury BTS SIO SISR</h2>
+                
+                <div class="preuve-section">
+                    <h3>👥 Gestion des Comptes, Domaines et Postes</h3>
+                    <p>Procédures d'intégration et d'administration des utilisateurs et du matériel :</p>
+                    <div class="pdf-grid">
+                        <a href="asset/pdf/MO création utilisateur AD.pdf" target="_blank" class="btn-doc">
+                            📄 Création utilisateur AD
+                        </a>
+                        <a href="asset/pdf/MO Crée Poste et compte utilisateur.pdf" target="_blank" class="btn-doc">
+                            📄 Créer Poste et compte utilisateur
+                        </a>
+                        <a href="asset/pdf/MO domaine.pdf" target="_blank" class="btn-doc">
+                            📄 Intégration au Domaine
+                        </a>
+                        <a href="asset/pdf/MO local.pdf" target="_blank" class="btn-doc">
+                            📄 Configuration Compte Local
+                        </a>
+                        <a href="asset/pdf/MO para O365.pdf" target="_blank" class="btn-doc">
+                            📄 Paramétrage Office 365
+                        </a>
+                        <a href="asset/pdf/rentré du matérielle dans axel remote.pdf" target="_blank" class="btn-doc">
+                            📄 rentrer du matériel Axel Remote
+                        </a>
+                    </div>
+                </div>
+
+                <div class="preuve-section">
+                    <h3>🌐 Réseau, Périphériques & Infrastructure</h3>
+                    <p>Configuration des accès ressources et équipements réseaux :</p>
+                    <div class="pdf-grid">
+                        <a href="asset/pdf/installé imprimante Réseau.pdf" target="_blank" class="btn-doc">
+                            📄 Installation Imprimante Réseau
+                        </a>
+                        <a href="asset/pdf/MO Connecté un lecteur réseau.pdf" target="_blank" class="btn-doc">
+                            📄 Connecter un Lecteur Réseau
+                        </a>
+                    </div>
+                    
+                    <h4 style="margin-top: 20px;">Configuration Switch (Alcatel OS8 & OS6)</h4>
+                    <div class="code-block">
+OS8:
+- Voir sur quel vlan il est : show vlan members port &lt;chassis/slot/port&gt;
+- Changer de vlan : vlan &lt;ID_VLAN&gt; members port &lt;chassis/slot/port&gt; untagged
+- Enregistrer : write memory flash-synchro
+
+OS6:
+- Équivalent untagged: vlan 16 port default 1/13
+                    </div>
+                </div>
+
+                <div class="preuve-section">
+                    <h3>⚙️ Déploiement Logiciels Métier (AGEM)</h3>
+                    <p>Déploiement, paramétrage réseau et gestion des licences logicielles :</p>
+                    <div class="pdf-grid">
+                        <a href="asset/pdf/2020 CAD.pdf" target="_blank" class="btn-doc">
+                            📄 Déploiement & Licence 2020 CAD
+                        </a>
+                        <a href="asset/pdf/Instal WOOD.pdf" target="_blank" class="btn-doc">
+                            📄 Déploiement WOOD Configurator
+                        </a>
+                         <a href="asset/pdf/Instal WOOD.pdf" target="_blank" class="btn-doc">
+                            📄 Déploiement WOODWop
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <h4>Aperçu des demandes de licences :</h4>
+                        <img src="asset/image/Capture d'écran demande de licence.png" alt="Mail demande de licence" class="jury-img" style="max-width: 48%;">
+                        <img src="asset/image/Capture d'écran licence wood.png" alt="Licences Wood" class="jury-img" style="max-width: 48%;">
+                    </div>
+                </div>
+
+                <div class="preuve-section">
+                    <h3>🛠 Support Utilisateur (GLPI) & Environnement (TSE)</h3>
+                    <p><strong>Gestion des tickets (GLPI) :</strong> Préparation et réinitialisation de postes informatiques.</p>
+                    <img src="asset/image/Capture d'écran GLPI.png" alt="Gestion GLPI" class="jury-img">
+                    
+                    <p><strong>Configuration d'environnement RDS/TSE :</strong> Paramétrage du démarrage de session et mappage.</p>
+                    <img src="asset/image/Capture d'écran environement.png" alt="Environnement TSE" class="jury-img" style="max-width: 300px;">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; Portfolio Mathis Chauvin</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
