@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Jury - Mathis Chauvin</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="icon" href="asset/image/m.png" type="image/x-icon">
+    <style>
+        .preuve-section { margin-bottom: 40px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .preuve-section h3 { color: #333; border-bottom: 2px solid #007BFF; padding-bottom: 10px; margin-bottom: 20px; }
+        
+        /* Grille pour aligner les boutons de PDF */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        /* Style pour les boutons de téléchargement/visualisation des documents */
+        .btn-doc {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 15px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-doc:hover {
+            background-color: #007BFF;
+            color: #fff;
+            border-color: #007BFF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+        }
+        .btn-doc i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Sections spécifiques conservées pour les images */
+        .code-block { background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; margin-bottom: 15px; }
+        .jury-img { max-width: 100%; height: auto; border: 1px solid #ddd; margin: 10px 0; border-radius: 4px; }
+        
+        /* Nouveaux styles pour la galerie de preuves photo */
+        .img-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .img-card {
+            flex: 1;
+            min-width: 220px;
+            background: #fdfdfd;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .img-card p {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: #444;
+            font-weight: bold;
+        }
+        .img-card img {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+        
+    </style>
+    <script data-goatcounter="https://cvnmts.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <header id="header">    
+        <div class="container">
+            <a href="index.html"><img src="asset/image/mc.png" alt="Logo" class="logo"></a>       
+            <nav>      
+                <ul>
+                    <li><a href="projets.html">⬅ Retour aux projets</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Preuves de Compétences - Espace Jury BTS SIO SISR</h2>
+                
+                <div class="preuve-section">
+                    <h3>👥 Gestion des Comptes, Domaines et Postes</h3>
+                    <p>Procédures d'intégration et d'administration des utilisateurs et du matériel :</p>
+                    <div class="pdf-grid">
+                        <a href="asset/pdf/MO création utilisateur AD.pdf" target="_blank" class="btn-doc">
+                            📄 Création utilisateur AD
+                        </a>
+                        <a href="asset/pdf/MO Crée Poste et compte utilisateur.pdf" target="_blank" class="btn-doc">
+                            📄 Créer Poste et compte utilisateur
+                        </a>
+                        <a href="asset/pdf/MO domaine.pdf" target="_blank" class="btn-doc">
+                            📄 Intégration au Domaine
+                        </a>
+                        <a href="asset/pdf/MO local.pdf" target="_blank" class="btn-doc">
+                            📄 Configuration Compte Local
+                        </a>
+                        <a href="asset/pdf/MO para O365.pdf" target="_blank" class="btn-doc">
+                            📄 Paramétrage Office 365
+                        </a>
+                        <a href="asset/pdf/rentré du matérielle dans axel remote.pdf" target="_blank" class="btn-doc">
+                            📄 Rentrer du matériel Axel Remote
+                        </a>
+                    </div>
+                    
+                    <h4 style="margin-top: 30px;">Déploiement et inventaire Clients Légers (Axel)</h4>
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Platine Terminal Axel 85</p>
+                            <img src="asset/image/1000000039.jpg" alt="Terminal Axel">
+                        </div>
+                        <div class="img-card">
+                            <p>Enregistrement inventaire (axel Remote)</p>
+                            <img src="asset/image/Axel Remote.png" alt="Interface de gestion inventaire Axel">
+                        </div>
+                        <div class="img-card">
+                            <p>Ajout du materiel GLPI</p>
+                            <img src="asset/image/1000000044.jpg" alt="Ajout de materiel GLPI">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preuve-section">
+                    <h3>🌐 Réseau, Périphériques & Infrastructure</h3>
+                    <p>Configuration des accès ressources, téléphonie, sauvegarde et équipements réseaux :</p>
+                    <div class="pdf-grid">
+                        <a href="asset/pdf/installé imprimante Réseau.pdf" target="_blank" class="btn-doc">
+                            📄 Installation Imprimante Réseau
+                        </a>
+                        <a href="asset/pdf/MO Connecté un lecteur réseau.pdf" target="_blank" class="btn-doc">
+                            📄 Connecter un Lecteur Réseau
+                        </a>
+                    </div>
+                    
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Bande de Sauvegarde Dell</p>
+                            <img src="asset/image/1000000043.jpg" alt="Bande de sauvegarde LTO">
+                        </div>
+                        <div class="img-card">
+                            <p>Zapette (Casio)</p>
+                            <img src="asset/image/1000000042.jpg" alt="Terminal mobile Casio">
+                        </div>
+                    </div>
+                    
+                    <h4 style="margin-top: 20px;">Infrastructure Téléphonie (VoIP & Softphone)</h4>
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Ancienne telephonie (telephone Alcatel)</p>
+                            <img src="asset/image/1000000050.jpg" alt="Téléphone IP Alcatel">
+                        </div>
+                        <div class="img-card">
+                            <p>nouvelle Aplication pour telephonie (WEBEX)</p>
+                            <img src="asset/image/1000000047.jpg" alt="Interface Softphone">
+                        </div>
+                    </div>
+                    
+                    <h4 style="margin-top: 20px;">Configuration Switch (Alcatel OS8 & OS6)</h4>
+                    <div class="code-block">
+OS8:
+- -Regarder le vlan d'un port: show vlan members port &lt;chassis/slot/port&gt;
+- Changer de vlan : vlan &lt;ID_VLAN&gt; members port &lt;chassis/slot/port&gt; untagged
+- Enregistrer : write memory flash-synchro
+
+OS6:
+-Regarder le vlan d'un port : show vlan port &lt;slot/port&gt;
+-Changer de vlan: vlan &lt;ID_VLAN&gt; port default &lt;slot/port&gt;
+                    </div>
+                </div>
+
+                <div class="preuve-section">
+                    <h3>⚙️ Déploiement Logiciels Métier (AGEM)</h3>
+                    <p>Déploiement, paramétrage réseau et gestion des licences logicielles :</p>
+                    <div class="pdf-grid">
+                        <a href="asset/pdf/2020 CAD.pdf" target="_blank" class="btn-doc">
+                            📄 Déploiement & Licence 2020 CAD
+                        </a>
+                        <a href="asset/pdf/Instal WOOD.pdf" target="_blank" class="btn-doc">
+                            📄 Déploiement WOOD Configurator
+                        </a>
+                         <a href="asset/pdf/Instal WOOD.pdf" target="_blank" class="btn-doc">
+                            📄 Déploiement WOODWop
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <h4>Aperçu des demandes de licences :</h4>
+                        <img src="asset/image/Capture d'écran demande de licence.png" alt="Mail demande de licence" class="jury-img" style="max-width: 48%;">
+                        <img src="asset/image/Capture d'écran licence wood.png" alt="Licences Wood" class="jury-img" style="max-width: 48%;">
+                    </div>
+                </div>
+
+                <div class="preuve-section">
+                    <h3>🛠 Support Utilisateur (GLPI) & Environnement (TSE)</h3>
+                    
+                    <p><strong>Configuration d'environnement Bureau Distant (RDS/TSE) :</strong> Déploiement de raccourcis, paramétrage du démarrage de session et accès aux applicatifs (ERP).</p>
+                    
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Raccourci de connexion RDP (F-TSE)</p>
+                            <img src="asset/image/1000000045.jpg" alt="Raccourci RDP F-TSE">
+                        </div>
+                        <div class="img-card">
+                            <p>Environnement utilisateur en session (ERP)</p>
+                            <img src="asset/image/1000000046.jpg" alt="Bureau distant utilisateur">
+                        </div>
+                        <div class="img-card">
+                            <p>Paramètres de l'environnement TSE</p>
+                            <img src="asset/image/Capture d'écran environement.png" alt="Paramètres TSE">
+                        </div>
+                    </div>
+                    <p><strong>Gestion des tickets (GLPI) :</strong> Suivi des interventions, préparation et réinitialisation de postes informatiques.</p>
+                    
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Vue générale des tickets</p>
+                            <img src="asset/image/Capture d'écran GLPI.png" alt="Gestion GLPI">
+                        </div>
+                        <div class="img-card">
+                            <p>Planification d'intervention</p>
+                            <img src="asset/image/1000000038.jpg" alt="Suivi de ticket GLPI">
+                        </div>
+                    </div>
+                    
+                </div>
+<div class="preuve-section">
+                    <h3>🎓 Compétences acquises en cours</h3>
+                    <p>Mise en place d'une infrastructure complète en environnement d'apprentissage : services réseaux, sécurité, supervision, haute disponiblité et gestion de parc.</p>
+
+                    <h4 style="margin-top: 20px;">Infrastructure Système et Réseau</h4>
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Active Directory (AD DS)</p>
+                            <img src="asset/image/Installation AD.png" alt="Installation Active Directory">
+                        </div>
+                        <div class="img-card">
+                            <p>Réplication de fichiers (DFSR)</p>
+                            <img src="asset/image/Installation DFSR.png" alt="Configuration DFSR">
+                        </div>
+                        <div class="img-card">
+                            <p>Pare-feu (OPNsense)</p>
+                            <img src="asset/image/installation OPNsense + règle.png" alt="Règles LAN sur OPNsense">
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 20px;">Gestion de Parc & Sécurité</h4>
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Installation de GLPI</p>
+                            <img src="asset/image/Installation GLPI.png" alt="Mise en place de GLPI">
+                        </div>
+                        <div class="img-card">
+                            <p>Sécurisation Web (HTTPS)</p>
+                            <img src="asset/image/faire de l'https.png" alt="Mise en place de certificats HTTPS">
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 20px;">Supervision & Sauvegarde</h4>
+                    <div class="img-row">
+                        <div class="img-card">
+                            <p>Supervision réseau (LibreNMS)</p>
+                            <img src="asset/image/Installation SRV supervision.png" alt="Interface de supervision LibreNMS">
+                        </div>
+                        <div class="img-card">
+                            <p>Serveur de Sauvegarde (Urbakcup)</p>
+                            <img src="asset/image/Installation SRV Backup.png" alt="Statut des sauvegardes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer-container">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>Me contacter</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> 06 47 04 79 52</li>
+                <li><i class="fas fa-envelope"></i> chauvin.mathis1.0@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 20 Rue de la Calaisiere, La Ferté-Bernard</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Suivez-moi</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/mathis-chauvin-8566023b2/"><img src="asset/image/likedin.png" class="logos" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-copyright">
+            <p>&copy; Portfolio Mathis Chauvin</p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="mentions-legales.html">Mentions légales & RGPD</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
